@@ -54,7 +54,11 @@ function Score() {
   return (
     <div>
       <div className="container">
-        <h1 className="titlekk">Enhance Begins Here:</h1>
+        <h1 className="titlekk">
+        <span className="word">Enhance&nbsp;</span>
+          <span className="word">Begins&nbsp;</span>
+          <span className="word">Here :</span>
+        </h1>
         <p>For The Children With Special Needs</p>
         <br></br>
         <form onSubmit={handleSubmit} className="form">

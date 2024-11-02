@@ -1,6 +1,6 @@
 .container {
   width: 700px;
-  height: 650px;
+  height: 685px;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #4aaa4e;
@@ -392,3 +392,129 @@ textarea {
   color: #777;
   font-size: 1.2rem;
 }
+
+.labelX {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  color: #b8b7b7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px #000;
+  transition: transform 0.8s ease-in-out;
+}
+
+.inputX-select {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1em;
+  color: #333;
+  background: linear-gradient(135deg, #73945A, #2681c6);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: gradientTransition 4s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.inputX-select:hover {
+  color: #3e3f3f;
+}
+
+@keyframes gradientTransition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.inputX-select:focus {
+  border: 1px solid #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+}
+
+.inputX-select option {
+  padding: 10px;
+  color: #444;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.inputy-container {
+  position: relative;
+  width: 100%;
+}
+
+.inputy-text {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.voice-input-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 25px;
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.voice-input-button:hover .mic-icon {
+  opacity: 0.5;
+}
+
+.mic-icon {
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes colorChange {
+  0%, 100% { background: linear-gradient(90deg, #f0baad, #7af4e8); -webkit-background-clip: text; color: transparent; }
+  25% { background: linear-gradient(90deg, #7ee291, #81b5ed); -webkit-background-clip: text; color: transparent; }
+  50% { background: linear-gradient(90deg, #5ed8eb, #938F8F); -webkit-background-clip: text; color: transparent; }
+  75% { background: linear-gradient(90deg, #eed984, #e67e22); -webkit-background-clip: text; color: transparent; }
+}
+
+.word {
+  display: inline-block;
+  animation: colorChange 5s infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background 1s ease-in-out;
+}
+
+.word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.word:nth-child(3) {
+  animation-delay: 4s;
+}
+
+

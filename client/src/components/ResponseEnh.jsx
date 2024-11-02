@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import './Kk.css';
 import * as pdfjsLib from 'pdfjs-dist';
 
-function Response() {
+function ResponseEnh() {
   const location = useLocation();
   const navigate = useNavigate();
   const { pdfUrl } = location.state || { pdfUrl: null };
@@ -97,7 +97,7 @@ function Response() {
       const formData = new FormData();
       formData.append('notes', blob, 'response.pdf');
 
-      const uploadResponse = await fetch('https://random-prompt.onrender.com/upload', {
+      const uploadResponse = await fetch('https://server-deploy-nw8p.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
@@ -150,7 +150,7 @@ function Response() {
 
   return (
       <div className="containerxb">
-        <h1 className="titlexb">Response Task Resolved: </h1>
+        <h1 className="titlexb">Response Notes</h1>
 <br/>
         {refreshedPdfUrl ? (
             <div className="pdf-containerxb">
@@ -178,7 +178,7 @@ function Response() {
         )}
 
         <div className="buttonsxb">
-          <button type="button" onClick={() => navigate('/randomprompt')} className="btnxb btn-primaryxb">
+          <button type="button" onClick={() => navigate('/enhance')} className="btnxb btn-primaryxb">
             Retake
           </button>
           <button
@@ -194,4 +194,4 @@ function Response() {
   );
 }
 
-export default Response;
+export default ResponseEnh;

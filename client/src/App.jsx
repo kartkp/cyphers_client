@@ -6,6 +6,7 @@ import Score from './components/Score';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Response from './components/Response';
+
 import Navhome from './components/Navhome';
 import Tts from './components/Tts';
 import Quizz from './components/Quizz';
@@ -25,7 +26,10 @@ import Navbarx from './components/Navbarx';
 import Navbary from './components/Navbary';
 import Navbarout from './components/Navbarout';
 
+
 import Signup from "./components/Signup.jsx";
+import Randomprompt from "./components/Randomprompt.jsx";
+import ResponseEnh from "./components/ResponseEnh.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -50,12 +54,16 @@ function App() {
             element: <><Navbarx /><Login/></>,
         },
         {
+            path: "/randomprompt",
+            element: <><Navbar /><Randomprompt/></>,
+        },
+        {
             path: "/Signup",
             element: <><Navbarx /><Signup/></>,
         },
         {
             path: "/response",
-            element: <><Navbar /><Response /></>,
+            element: <><Navbar /><ResponseEnh /></>,
         },
         {
             path: "/bulletin",
@@ -80,6 +88,10 @@ function App() {
         {
             path: "/quizz",
             element: <><Navbar /><Quizz /></>,
+        },
+        {
+            path: "/responsetwo",
+            element: <><Navbar /><Response/></>,
         },
         {
             path: "/Quizpage",

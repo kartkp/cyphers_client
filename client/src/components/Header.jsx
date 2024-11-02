@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 
+
 const Header = () => {
+  const colors = ['#1E1B4B', '#14B8A6', '#91DA6F', '#6FCE7C', '#0AAE9D', '#821D1B', '#63CA81', '#CAD233', '#FFFFFF'];
+  const [colorIndex, setColorIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
+    }, 2500);
+    
+    return () => clearInterval(interval);
+  }, [colors.length]);
+
+  const colorfulTextStyle = {
+    fontFamily: 'Segoe UI, sans-serif',
+    fontWeight: 700,
+    fontSize: '1.3rem',
+    marginBottom: '10px',
+    paddingLeft: '150px',
+    textAlign: 'left',
+    color: colors[colorIndex],
+    textShadow: '0px 0px 1px black',
+  };;
   return (
     <header style={styles.header}>
       <br></br>
@@ -14,27 +36,27 @@ const Header = () => {
               className="text-indigo-950">Ways</span>
           </h1>
           <br/>
-          <p style={{
-            ...styles.textOutline,
-            fontFamily: 'Segoe UI, sans-serif',
-            fontWeight: 700,
-            fontSize: '1.3rem',
-            marginBottom: '10px'
-          }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            we turn ordinary lessons into extraordinary adventures!
-          </p>
-          <p style={{
-            ...styles.textOutline,
-            fontFamily: 'Segoe UI, sans-serif',
-            fontWeight: 700,
-            fontSize: '1.3rem',
-            marginBottom: '10px'
-          }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            we cater to diverse learning styles.
-
-          </p>
+          <div>
+          <p style={colorfulTextStyle}>
+              {["we turn ordinary lessons into extraordinary adventures!"].map((word, index) => (
+                <span key={index} style={{
+                  color: colors[(colorIndex + index) % colors.length],
+                  transition: 'color 0.5s'
+                }}>
+                  {word}&nbsp;
+                </span>
+              ))}
+            </p>
+            <p style={colorfulTextStyle}>
+              {["we cater to diverse learning styles."].map((word, index) => (
+                <span key={index} style={{
+                  color: colors[(colorIndex + index) % colors.length],
+                  transition: 'color 0.5s'
+                }}>
+                  {word}&nbsp;
+                </span>
+              ))}
+            </p></div>
         </div>
         <img classname="mainimage" src="https://res.cloudinary.com/dlhktanwi/image/upload/v1725047153/__Future-classrooms_now____Adaptive_learning_for_personalized_paths_%EF%B8%8F___Instant_feedback_loops_for_growth____Tech-enabled_inclusive_education_____Public_Trust_Solutions__Pioneering_tech_integration_in_learni_kexxvw.jpg" alt="Tech Background" style={{ ...styles.image, transition: 'transform 0.8s ease-in-out' }} className="zoom-image"  />
       </div>

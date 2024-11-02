@@ -57,13 +57,20 @@ const Navbar = () => {
         </div>
         <div className="dropdown">
           <Link activeClassName="active" to="/quizz">Quizz</Link>
+          
         </div>
-        <Link activeClassName="active" to="/bulletin">Bulletin</Link>
-        <Link activeClassName="active" to="/about">About Us</Link>
+        <div className="dropdown">
+        <Link activeClassName="active" to="/randomprompt">Tasks</Link></div>
+        <div className="dropdown">
+        <Link activeClassName="active" to="/bulletin">Bulletin</Link></div>
+        <div className="dropdown">
+        <Link activeClassName="active" to="/about">About Us</Link></div>
         <div className="dropdown">
           <Link activeClassName="active" to="/OurJourney">Our Journey</Link>
-          <Link activeClassName="active" to="/Login">Register</Link>
+          
         </div>
+        <div className="dropdown">
+        <Link activeClassName="active" to="/Login">Register</Link></div>
       </nav>
     </header>
   );
