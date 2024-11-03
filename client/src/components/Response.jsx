@@ -150,7 +150,12 @@ function Response() {
 
   return (
       <div className="containerxb">
-        <h1 className="titlexb">Response Task Resolved: </h1>
+
+        <h1 className="titlekk">
+        <span className="word">Response&nbsp;</span>
+          <span className="word">Task&nbsp;</span>
+          <span className="word">Resolved :</span>
+        </h1>
 <br/>
         {refreshedPdfUrl ? (
             <div className="pdf-containerxb">
