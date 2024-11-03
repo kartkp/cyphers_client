@@ -150,7 +150,11 @@ function ResponseEnh() {
 
   return (
       <div className="containerxb">
-        <h1 className="titlexb">Response Notes</h1>
+
+        <h1 className="titlekk">
+        <span className="word">Response&nbsp;</span>
+          <span className="word">Notes&nbsp;</span>
+        </h1>
 <br/>
         {refreshedPdfUrl ? (
             <div className="pdf-containerxb">
