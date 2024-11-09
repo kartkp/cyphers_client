@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Kk.css";
+import Loading from "./Loading";
 
 function Randomprompt() {
   const [pdfFile, setPdfFile] = useState(null);
@@ -42,7 +43,9 @@ function Randomprompt() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setLoading(true);
     setSubmitting(true);
+
 
     const formData = new FormData();
     if (pdfFile) formData.append("notes", pdfFile);
@@ -69,6 +72,18 @@ function Randomprompt() {
         setSubmitting(false);
       });
   };
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div>
