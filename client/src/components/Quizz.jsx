@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Quizz.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Loading from "./Loading";
 
 function Quizz() {
   const [questions, setQuestions] = useState([]);
@@ -13,6 +14,7 @@ function Quizz() {
   const [language, setLanguage] = useState('english');
 
   const navigate = useNavigate();
+  
 
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
@@ -63,6 +65,19 @@ function Quizz() {
       setLoading(false);
     }
   };
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div className="app-container">
