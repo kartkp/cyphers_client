@@ -61,11 +61,11 @@ const Navbar = () => {
         </div>
         <div className="dropdown">
         <Link activeClassName="active" to="/randomprompt">Tasks</Link></div>
-        <div className="dropdown">
-{/*         <Link activeClassName="active" to="/bulletin">Bulletin</Link></div>
-        <div className="dropdown">
-        <Link activeClassName="active" to="/about">About Us</Link></div>
-        <div className="dropdown">
+{/*         <div className="dropdown">
+        <Link activeClassName="active" to="/bulletin">Bulletin</Link></div> */}
+{/*         <div className="dropdown">
+        <Link activeClassName="active" to="/about">About Us</Link></div> */}
+{/*         <div className="dropdown">
           <Link activeClassName="active" to="/OurJourney">Our Journey</Link>
           
         </div> */}
