@@ -17,7 +17,7 @@ function Score() {
     return () => clearTimeout(timer);
   }, []);
   useEffect(() => {
-    document.title = "Brightways-Enhancer";
+    document.title = "Brightways - Enhancer";
     const timer = setTimeout(() => setLoading(false), 300);
     return () => clearTimeout(timer);
   }, []);
