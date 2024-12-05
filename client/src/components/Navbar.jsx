@@ -62,13 +62,13 @@ const Navbar = () => {
         <div className="dropdown">
         <Link activeClassName="active" to="/randomprompt">Tasks</Link></div>
         <div className="dropdown">
-        <Link activeClassName="active" to="/bulletin">Bulletin</Link></div>
+{/*         <Link activeClassName="active" to="/bulletin">Bulletin</Link></div>
         <div className="dropdown">
         <Link activeClassName="active" to="/about">About Us</Link></div>
         <div className="dropdown">
           <Link activeClassName="active" to="/OurJourney">Our Journey</Link>
           
-        </div>
+        </div> */}
         <div className="dropdown">
         <Link activeClassName="active" to="/Login">Register</Link></div>
       </nav>
