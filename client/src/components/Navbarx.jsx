@@ -49,15 +49,15 @@ const Navbarx = () => {
             </div>
             <nav className="navbar">
                 <Link exact activeClassName="active" to="/home">Home</Link>
-                <div className="dropdown">
+{/*                 <div className="dropdown">
 
-                    {/*<Link activeClassName="active" to="/enhance">Notes Enhancer</Link>*/}
+                    <Link activeClassName="active" to="/enhance">Notes Enhancer</Link>
 
 
-                </div>
-                <div className="dropdown">
-                    {/*<Link activeClassName="active" to="/quizz">Quizz</Link>*/}
-                </div>
+                </div> */}
+{/*                 <div className="dropdown">
+                    <Link activeClassName="active" to="/quizz">Quizz</Link>
+                </div> */}
                 {/*<Link activeClassName="active" to="/bulletin">Bulletin</Link>*/}
 {/*                 <Link activeClassName="active" to="/aboutzhK">About Us</Link> */}
                 <div className="dropdown">
