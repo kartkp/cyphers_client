@@ -51,6 +51,7 @@ const Login = () => {
     };
 
     useEffect(() => {
+                    document.title = "Login Buddy";
         const timer = setTimeout(() => {
             setIsLoading(false);
         }, 300);
