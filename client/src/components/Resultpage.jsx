@@ -15,6 +15,7 @@ function Resultpage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+        document.title = "Result Out!";
     if (questions.length > 0 && Object.keys(responses).length > 0) {
       const processedAnswers = questions.map((question, index) => ({
         question: question.ques,
