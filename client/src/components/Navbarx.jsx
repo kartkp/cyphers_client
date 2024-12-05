@@ -59,9 +59,9 @@ const Navbarx = () => {
                     {/*<Link activeClassName="active" to="/quizz">Quizz</Link>*/}
                 </div>
                 {/*<Link activeClassName="active" to="/bulletin">Bulletin</Link>*/}
-                <Link activeClassName="active" to="/aboutzhK">About Us</Link>
+{/*                 <Link activeClassName="active" to="/aboutzhK">About Us</Link> */}
                 <div className="dropdown">
-                    <Link activeClassName="active" to="/OurJourneyhzkG">Our Journey</Link>
+{/*                     <Link activeClassName="active" to="/OurJourneyhzkG">Our Journey</Link> */}
                     <Link activeClassName="active" to="/Signup">Register</Link>
                 </div>
             </nav>
