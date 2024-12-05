@@ -59,6 +59,7 @@ function Score() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+                document.title = "Brightways-Enhancer";
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 300);
