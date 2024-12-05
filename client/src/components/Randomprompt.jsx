@@ -19,6 +19,7 @@ function Randomprompt() {
   recognition.continuous = false;
 
   useEffect(() => {
+                document.title = "Brightways-Tasks";
     const timer = setTimeout(() => setLoading(false), 300);
     return () => clearTimeout(timer);
   }, []);
