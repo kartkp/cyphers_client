@@ -16,6 +16,11 @@ function Score() {
     const timer = setTimeout(() => setLoading(false), 300);
     return () => clearTimeout(timer);
   }, []);
+  useEffect(() => {
+    document.title = "Enhance It!";
+    const timer = setTimeout(() => setLoading(false), 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handlePdfChange = (event) => setPdfFile(event.target.files[0]);
 
