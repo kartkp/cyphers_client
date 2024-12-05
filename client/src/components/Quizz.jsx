@@ -69,7 +69,7 @@ function Quizz() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-                document.title = "Brightways-Quiz";
+                document.title = "Brightways - Quiz";
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 300);
