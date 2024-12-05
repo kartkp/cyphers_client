@@ -15,6 +15,7 @@ function ResponseEnh() {
   const [quizQuestions, setQuizQuestions] = useState([]);
 
   useEffect(() => {
+            document.title = "Responce";
     if (pdfUrl) {
       extractTextFromPDF(pdfUrl);
     }
