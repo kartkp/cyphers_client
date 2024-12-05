@@ -10,6 +10,7 @@ const Quizpage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        document.title = "Quiz Started!";
         const storedQuestions = JSON.parse(localStorage.getItem('questions'));
         if (storedQuestions) {
             setQuestions(storedQuestions);
