@@ -7,6 +7,7 @@ const Header = () => {
   const [colorIndex, setColorIndex] = useState(0);
 
   useEffect(() => {
+                document.title = "Brightways-Home";
     const interval = setInterval(() => {
       setColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
     }, 2500);
