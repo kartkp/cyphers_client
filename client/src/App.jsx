@@ -39,7 +39,7 @@ function App() {
         },
         {
             path: "/homehkTJ",
-            element: <><Navbary /><Header /><Button /><Second /><Third /><Forth /><Fifth /><Footer /></>,
+            element: <><Navbar /><Header /><Button /><Second /><Third /><Forth /><Fifth /><Footer /></>,
         },
         {
             path: "/hxpZ",
