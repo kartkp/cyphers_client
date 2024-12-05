@@ -15,7 +15,7 @@ function Response() {
   const [quizQuestions, setQuizQuestions] = useState([]);
 
   useEffect(() => {
-        document.title = "Responce";
+        document.title = "Task Done!";
     if (pdfUrl) {
       extractTextFromPDF(pdfUrl);
     }
