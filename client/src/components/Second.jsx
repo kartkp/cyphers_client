@@ -1,5 +1,6 @@
 import React from 'react';
 import './Second.css';
+import {Link} from "react-router-dom";
 
 const Second = () => {
   return (
@@ -50,9 +51,20 @@ const Second = () => {
               <br></br><br></br>
 
           </p>
+                <div className="containers">
+                    <div className="rectangle"><Link activeClassName="active" to="/randomprompt">
+                        <button>
+                            <label className="custom-file-upload">
+                                <span className="button">Do The Tasks</span>
+                            </label>
+                        </button>
+                    </Link>
 
+                    </div>
+                </div>
 
       </section>
+      
   );
 };
 
