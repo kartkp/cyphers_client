@@ -517,4 +517,41 @@ textarea {
   animation-delay: 4s;
 }
 
+@media (max-width: 768px) {
+  .quiz-title {
+      font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .input-field {
+      padding: 8px; /* Reduce padding */
+      font-size: 14px; /* Reduce font size */
+  }
+
+  .submit-button {
+      font-size: 14px; /* Adjust button font size */
+      padding: 10px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+      padding: 10px; /* Reduce padding for smaller devices */
+      margin: 20px; /* Adjust margins */
+  }
+
+  .quiz-title {
+      font-size: 1.2rem; /* Further reduce font size */
+  }
+
+  .input-field {
+      padding: 6px; /* Reduce padding */
+      font-size: 12px; /* Adjust font size */
+  }
+
+  .submit-button {
+      font-size: 12px; /* Adjust button font size */
+      padding: 8px; /* Adjust padding */
+  }
+}
+
 
