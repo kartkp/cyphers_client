@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Kk.css";
+import "./Random.css";
 import Loading from "./Loading";
 
 function Randomprompt() {
@@ -109,13 +109,13 @@ function Randomprompt() {
             Enter Your Prompt:
             <div className="inputy-container">
               <input
-                type="text"
+                type="textf"
                 id="prompt"
                 name="prompt"
                 placeholder="Enter Your Prompt Here"
                 value={prompt}
                 onChange={handlePromptChange}
-                className="inputy-text"
+                className="inputtt-text"
               />
               <button type="button" onClick={handleVoiceInput} className="voice-input-button">
                 <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1730542034/mic2-removebg-preview_peomtn.png" alt="Mic" className="mic-icon" />
@@ -159,7 +159,7 @@ function Randomprompt() {
           </div>
           <br />
           
-          <button type="submit" className="submit-button" disabled={submitting}>
+          <button type="submit" className="submit-buttonn" disabled={submitting}>
             {submitting ? "Submitting..." : "Submit"}
           </button>
         </form>
