@@ -9,8 +9,9 @@ General Styles body {
 }
 
 .app-container {
-  width: 700px;
-  height: 650px;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #4aaa4e;
@@ -35,9 +36,10 @@ General Styles body {
 
 .quiz-title {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: bold;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .Quiz {
@@ -55,8 +57,9 @@ General Styles body {
 }
 
 .input-field {
-  margin-left: 10px;
-  display: flex;
+  width: 100%; /* Full width for smaller screens */
+  max-width: 640px;
+  margin-bottom: 15px; /* Add spacing for better layout */
   padding: 10px;
   font-size: 15px;
   color: #333;
@@ -65,9 +68,20 @@ General Styles body {
   border-radius: 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s, box-shadow 0.3s;
-  width: 640px;
 }
-
+.yoyo{
+  width: 100%; /* Full width for smaller screens */
+  max-width: 640px;
+  margin-bottom: 15px; /* Add spacing for better layout */
+  padding: 10px;
+  font-size: 15px;
+  color: #333;
+  background-color: #938f8f;
+  border: 3px solid #dabbbb;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
 .input-field:focus {
   border-color: #0056b3;
   box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
@@ -120,39 +134,53 @@ General Styles body {
   }
 }
 @media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+    margin: 20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.quiz-form {
+  display:block;
+
+}
   .quiz-title {
-      font-size: 1.5rem; /* Smaller font size */
+      font-size: 1.5rem;
   }
 
   .input-field {
-      padding: 8px; /* Reduce padding */
-      font-size: 14px; /* Reduce font size */
+      padding: 8px;
+      font-size: 14px;
   }
 
   .submit-button {
-      font-size: 14px; /* Adjust button font size */
-      padding: 10px; /* Reduce padding */
+      font-size: 14px;
+      padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .app-container {
-      padding: 10px; /* Reduce padding for smaller devices */
-      margin: 20px; /* Adjust margins */
+      padding: 10px;
+      margin: 20px;
+      margin-top: 90px;
+      margin-bottom: 20px;
+  }
+  .quiz-form {
+    display:block;
   }
 
   .quiz-title {
-      font-size: 1.2rem; /* Further reduce font size */
+      font-size: 1.2rem;
   }
 
   .input-field {
-      padding: 6px; /* Reduce padding */
-      font-size: 12px; /* Adjust font size */
+      padding: 6px;
+      font-size: 12px;
   }
 
   .submit-button {
-      font-size: 12px; /* Adjust button font size */
-      padding: 8px; /* Adjust padding */
+      font-size: 12px;
+      padding: 8px;
   }
 }
-
