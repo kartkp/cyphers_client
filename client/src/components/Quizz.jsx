@@ -95,7 +95,7 @@ function Quizz() {
         <label htmlFor="language" className="input-label">Preferred Language:</label>
         <input type="textf" id="language" name="language" value={language} onChange={handleLanguageChange} className="yoyo" placeholder="e.g., Hindi, Spanish" required />
         <br />
-        <button type="submit" className="submit-button" disabled={loading}>
+        <button type="submit" className="submit-buttonn" disabled={loading}>
           {loading ? 'Submitting...' : 'Submit'}
         </button>
       </form>
