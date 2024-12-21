@@ -93,7 +93,7 @@ function Quizz() {
         <input type="number" id="numQuestions" name="numQuestions" min="1" value={numQuestions} onChange={handleNumQuestionsChange} className="input-field" required />
         <br />
         <label htmlFor="language" className="input-label">Preferred Language:</label>
-        <input type="text" id="language" name="language" value={language} onChange={handleLanguageChange} className="input-field" placeholder="e.g., Hindi, Spanish" required />
+        <input type="textf" id="language" name="language" value={language} onChange={handleLanguageChange} className="yoyo" placeholder="e.g., Hindi, Spanish" required />
         <br />
         <button type="submit" className="submit-button" disabled={loading}>
           {loading ? 'Submitting...' : 'Submit'}
