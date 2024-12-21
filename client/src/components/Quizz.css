@@ -18,7 +18,7 @@ General Styles body {
   border-radius: 5px;
   background-color: rgba(75, 73, 73, 0.5);
   color: #f2f2f2;
-  box-shadow: 0px 0px 3px 1px rgb(229, 176, 176);
+  box-shadow: 0px 0px 3px 1px rgb(72, 51, 51);
   margin-top: 100px;
 }
 
@@ -97,7 +97,7 @@ General Styles body {
   transition: transform 0.8s ease-in-out;
 }
 
-.submit-button {
+.submit-buttonn {
   padding: 12px 20px;
   background-color: #0056b3;
   color: #ffffff;
@@ -110,7 +110,7 @@ General Styles body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.submit-button:hover {
+.submit-buttonn:hover {
   background-color: #003d7a;
 }
 
@@ -134,53 +134,53 @@ General Styles body {
   }
 }
 @media (max-width: 768px) {
-  .app-container {
-    padding: 10px;
-    margin: 20px;
-    margin-top: 90px;
-    margin-bottom: 20px;
-}
-.quiz-form {
-  display:block;
+    .container {
+        padding: 10px;
+        margin: 20px;
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+    .quiz-form {
+        display: block;
+    }
 
-}
-  .quiz-title {
-      font-size: 1.5rem;
-  }
+    .titlekk {
+        font-size: 1.5rem;
+    }
 
-  .input-field {
-      padding: 8px;
-      font-size: 14px;
-  }
+    .input-file {
+        padding: 8px;
+        font-size: 14px;
+    }
 
-  .submit-button {
-      font-size: 14px;
-      padding: 10px;
-  }
+    .submit-button {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
-  .app-container {
-      padding: 10px;
-      margin: 20px;
-      margin-top: 90px;
-      margin-bottom: 20px;
-  }
-  .quiz-form {
-    display:block;
-  }
+    .container {
+        padding: 10px;
+        margin: 20px;
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+    .quiz-form {
+        display: block;
+    }
 
-  .quiz-title {
-      font-size: 1.2rem;
-  }
+    .titlekk {
+        font-size: 1.2rem;
+    }
 
-  .input-field {
-      padding: 6px;
-      font-size: 12px;
-  }
+    .input-file {
+        padding: 6px;
+        font-size: 12px;
+    }
 
-  .submit-button {
-      font-size: 12px;
-      padding: 8px;
-  }
+    .submit-button {
+        font-size: 12px;
+        padding: 8px;
+    }
 }
