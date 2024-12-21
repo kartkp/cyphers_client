@@ -468,6 +468,139 @@ Quizpage.css
     color: #0b0d10;
   }
   
+  @media (max-width: 1024px) {
+    .result-page {
+        padding: 15px;
+    }
+
+    .main-heading {
+        font-size: 3rem;
+    }
+
+    .score-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    
+
+    .score-stats {
+        font-size: 14px;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .answers-details {
+        font-size: 14px;
+    }
+
+    .answer-detail {
+        margin-bottom: 15px;
+    }
+
+    .question-text {
+        font-size: 1.2rem;
+    }
+
+    .options-list {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-page {
+        padding: 10px;
+    }
+
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .score-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    
+
+    .percentage-result {
+        font-size: 0.4em;
+    }
+
+    .feedback {
+        font-size: 16px;
+    }
+
+    .score-stats {
+        font-size: 12px;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+    }
+
+    .answers-details {
+        font-size: 12px;
+    }
+
+    .answer-detail {
+        margin-bottom: 10px;
+    }
+
+    .question-text {
+        font-size: 1rem;
+    }
+
+    .options-list {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .score-card {
+        padding: 10px;
+    }
+
+    
+
+    .feedback {
+        font-size: 14px;
+    }
+
+    .score-stats {
+        font-size: 12px;
+    }
+
+    .filter-buttons button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .answer-detail {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .question-text {
+        font-size: 0.9rem;
+    }
+
+    .options-list {
+        font-size: 12px;
+    }
+}
 
 
   
