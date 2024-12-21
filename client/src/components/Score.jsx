@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Kk.css";
+import "./Score.css";
 import Loading from "./Loading";
 
 function Score() {
@@ -16,6 +16,7 @@ function Score() {
     const timer = setTimeout(() => setLoading(false), 300);
     return () => clearTimeout(timer);
   }, []);
+
   useEffect(() => {
     document.title = "Brightways - Enhancer";
     const timer = setTimeout(() => setLoading(false), 300);
@@ -56,6 +57,7 @@ function Score() {
         setSubmitting(false);
       });
   };
+
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -71,56 +73,60 @@ function Score() {
 
   return (
     <div>
-      <div className="container">
-        <h1 className="titlekk">
-        <span className="word">Enhance&nbsp;</span>
-          <span className="word">Begins&nbsp;</span>
-          <span className="word">Here :</span>
+      <div className="container__new">
+        <h1 className="titlekk__new">
+          <span className="word__new">Enhance&nbsp;</span>
+          <span className="word__new">Begins&nbsp;</span>
+          <span className="word__new">Here :</span>
         </h1>
         <p>For The Children With Special Needs</p>
         <br></br>
-        <form onSubmit={handleSubmit} className="form">
-          <label className="label">
+        <form onSubmit={handleSubmit} className="form__new">
+          <label className="label__new">
             Upload Your Notes (PDF only):
             <input
               type="file"
               accept="application/pdf"
               onChange={handlePdfChange}
-              className="input-file"
+              className="input-file__new"
             />
           </label>
           <br />
-          <label className="label">
+          <label className="label__new">
             Upload an Image (optional):
             <input
               type="file"
               accept="image/*"
               onChange={handleImageChange}
-              className="input-file"
+              className="input-file__new"
             />
           </label>
           <br />
-          <label className="label">
+          <label className="label__new">
             Enter Your Language Preferences (optional, default is English):
             <br></br>
             <br></br>
             <input
-              type="text"
+              type="textF"
               id="prompt"
               name="prompt"
               placeholder="Enter Your Language Here"
               value={prompt}
               onChange={handlePromptChange}
-              className="input-text"
+              className="yoyotwo__new"
             />
           </label>
           <br />
-          <button type="submit" className="submit-button" disabled={submitting}>
+          <button
+            type="submit"
+            className="submit-buttonn__new"
+            disabled={submitting}
+          >
             {submitting ? "Submitting..." : "Submit"}
           </button>
         </form>
 
-        {submitting && <div id="loading" className="loading-spinner"></div>}
+        {submitting && <div id="loading" className="loading-spinner__new"></div>}
       </div>
     </div>
   );
