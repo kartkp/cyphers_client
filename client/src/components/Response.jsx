@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './Kk.css';
+import './ResponceEnh.css';
 import * as pdfjsLib from 'pdfjs-dist';
 
 function Response() {
